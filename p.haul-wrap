@@ -63,7 +63,7 @@ def run_phaul_client(args, unknown_args):
 	# Organize p.haul args
 	target_args = [args.path]
 	target_args.extend(unknown_args)
-	target_args.extend(["--to", args.to,
+	target_args.extend([
 		"--fdrpc", str(connection_sks[0].fileno()),
 		"--fdmem", str(connection_sks[1].fileno()),
 		"--fdfs", str(connection_sks[2].fileno())])
