@@ -82,7 +82,7 @@ class phaul_iter_worker:
 	def pre_dump_check(self):
 		# pre-dump auto-detection
 		req = criu_req.make_dirty_tracking_req(
-			self.htype,self.img)
+			self.htype, self.img)
 		resp = self.criu_connection.send_req(req)
 		if not resp.success:
 			# Not able to do auto-detection, disable memory tracking
@@ -168,7 +168,7 @@ class phaul_iter_worker:
 
 			if dstats.pages_written <= phaul_iter_min_size:
 				logging.info("\t> Small dump")
-				break;
+				break
 
 			if prev_dstats:
 				w_add = dstats.pages_written - prev_dstats.pages_written

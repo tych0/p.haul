@@ -123,4 +123,3 @@ def make_dirty_tracking_req(htype, img):
 	req.keep_open = True
 	req.opts.images_dir_fd = img.work_dir_fd()
 	return req
-

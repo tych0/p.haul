@@ -6,7 +6,6 @@ import os
 import subprocess
 import shlex
 import logging
-import p_haul_module
 import util
 import fs_haul_shared
 import fs_haul_ploop
